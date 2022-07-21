@@ -1,0 +1,40 @@
+Pacman: 'P'
+direction: 0-Up
+1-Down
+2-Left
+3-Right
+4-Stay
+Pacman moves up will be shown in the file as:
+P 0
+
+Ghost: 'G'
+adjacent to the letter G there will be a number 0-4 which will represents the ghost's representive number
+direction: 0-Up
+1-Down
+2-Left
+3-Right
+Ghost 0 moves left will be shown in the file as:
+G0 2
+
+Fruit: 'F'
+fruit has 3 options-
+1. appearing on the board (represented by 0 adjacent to F)
+after 0 there will be a number which represents movement (same as ghost's movement), which will be followed
+by a 2 numbers: the first is row (after wards a space that seperates them) and a number representing column.
+after wards there will be another number (after another space) which represents the fruit's score.
+example:
+fruit appears, moves right, appears on row 7 column row 4, with score of 7:
+F0 3 7 4 7
+
+2. fruit moves regulary (represented by 1 adjacent to F)
+after 1 there will be a space that separates between it and the number which will represent the fruit movement.
+example:
+fruit moves down
+F1 1
+
+3. fruit disappears (represented by 2 adjacent to F)
+after 2 there is a space that seperates it from 2 different number (which are also separated between each other by space),
+those numbers represent row and column.
+example:
+fruit disappears on row 9 column 1:
+F2 9 1
